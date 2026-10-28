@@ -1,0 +1,40 @@
+{
+ "resultado": [
+  {
+   "idCompra": "15827205900012026",
+   "codigoItemCatalogo": 5380,
+   "descricaoItem": "PRESTACAO DE SERVICOS DE APOIO ADMINISTRATIVO, TECNICO E OPERACIONAL",
+   "quantidade": 1.0,
+   "precoUnitario": 51150.0,
+   "niFornecedor": "05394940000126",
+   "estado": "ES",
+   "dataCompra": "2026-09-22",
+   "dataResultado": "2026-09-22"
+  },
+  {
+   "idCompra": "15827205900012026",
+   "codigoItemCatalogo": 5380,
+   "descricaoItem": "PRESTACAO DE SERVICOS DE APOIO ADMINISTRATIVO, TECNICO E OPERACIONAL",
+   "quantidade": 1.0,
+   "precoUnitario": 64690.0,
+   "niFornecedor": "05394940000126",
+   "estado": "ES",
+   "dataCompra": "2026-09-22",
+   "dataResultado": "2026-09-22"
+  },
+  {
+   "idCompra": "15304605900592026",
+   "codigoItemCatalogo": 5380,
+   "descricaoItem": "PRESTACAO DE SERVICOS DE APOIO ADMINISTRATIVO, TECNICO E OPERACIONAL",
+   "quantidade": 1.0,
+   "precoUnitario": 2064120.0,
+   "niFornecedor": "40282584000150",
+   "estado": "ES",
+   "dataCompra": "2026-08-26",
+   "dataResultado": "2026-08-26"
+  }
+ ],
+ "totalRegistros": 161,
+ "totalPaginas": 17,
+ "paginasRestantes": 16
+}

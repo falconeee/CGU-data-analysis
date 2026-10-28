@@ -1,0 +1,53 @@
+[
+ {
+  "id": 405967,
+  "dataReferencia": "28/10/2026",
+  "dataInicioSancao": "24/07/2025",
+  "dataFimSancao": "23/07/2030",
+  "dataPublicacaoSancao": "26/05/2022",
+  "dataTransitadoJulgado": "23/07/2025",
+  "dataOrigemInformacao": "20/10/2026",
+  "tipoSancao": {
+   "descricaoResumida": "Declaração de Inidoneidade com prazo determinado",
+   "descricaoPortal": "Declaração de Inidoneidade com prazo determinado"
+  },
+  "fonteSancao": {
+   "nomeExibicao": "Tribunal de Contas do Estado de Goiás - TCE-GO",
+   "telefoneContato": "62 32282826 ",
+   "enderecoContato": "Av. Ubirajara Berocan Leite, 640 - St. Jao, Goiânia - GO"
+  },
+  "fundamentacao": [
+   {
+    "codigo": "LEI ORGÂNICA DO TRIBUNAL DE CONTAS DO ESTADO DE GOIÁS - ART. 115 - VERIFICADA A ",
+    "descricao": "LEI ORGÂNICA DO TRIBUNAL DE CONTAS DO ESTADO DE GOIÁS - ART. 115 - VERIFICADA A "
+   }
+  ],
+  "orgaoSancionador": {
+   "nome": "Tribunal de Contas do Estado de Goiás ",
+   "siglaUf": "GO",
+   "poder": "Tribunal de Contas",
+   "esfera": "ESTADUAL"
+  },
+  "sancionado": {
+   "nome": "Nossa Frota Locação de Veículos EIRELI",
+   "codigoFormatado": "29.118.884/0001-65"
+  },
+  "valorMulta": "0,00",
+  "pessoa": {
+   "id": 87258296,
+   "cpfFormatado": "",
+   "cnpjFormatado": "29.118.884/0001-65",
+   "numeroInscricaoSocial": "",
+   "nome": "NOSSA FROTA LOCACAO DE VEICULOS LTDA",
+   "razaoSocialReceita": "NOSSA FROTA LOCACAO DE VEICULOS LTDA",
+   "nomeFantasiaReceita": "",
+   "tipo": "Entidades Empresariais Privadas"
+  },
+  "textoPublicacao": "Outro Pagina 8",
+  "linkPublicacao": "",
+  "detalhamentoPublicacao": "Diário Eletrônico do Tribunal de Contas do Estado de Goiás",
+  "numeroProcesso": "202000047002117",
+  "abrangenciaDefinidaDecisaoJudicial": "Em todos os Poderes da Esfera do órgão sancionador",
+  "informacoesAdicionaisDoOrgaoSancionador": ""
+ }
+]

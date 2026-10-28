@@ -1,0 +1,52 @@
+[
+ {
+  "id": 97275,
+  "dataReferencia": "28/10/2026",
+  "dataInicioSancao": "20/03/2018",
+  "dataFimSancao": "20/03/2028",
+  "dataPublicacaoSancao": "Sem informação",
+  "dataTransitadoJulgado": "20/03/2018",
+  "dataOrigemInformacao": "22/10/2018",
+  "tipoSancao": {
+   "descricaoResumida": "Impedimento/proibição de contratar com prazo determinado",
+   "descricaoPortal": "Impedimento/proibição de contratar com prazo determinado"
+  },
+  "fonteSancao": {
+   "nomeExibicao": "Conselho Nacional de Justiça (CNJ-DF)",
+   "telefoneContato": ".(61) 2326-4925",
+   "enderecoContato": "SAF Sul Quadra 2 - Lote5/6 - Bloco E - Sala 303 - CEP: 70070-600  Brasília/DF"
+  },
+  "fundamentacao": [
+   {
+    "codigo": "LEI 8429 - ART. 12 - INDEPENDENTEMENTE DAS SANÇÕES PENAIS, CIVIS E ADMINISTRATIV",
+    "descricao": "LEI 8429 - ART. 12 - INDEPENDENTEMENTE DAS SANÇÕES PENAIS, CIVIS E ADMINISTRATIV"
+   }
+  ],
+  "orgaoSancionador": {
+   "nome": "1º Grau - TRF1 / Seção Judiciária Minas Gerais - SJMG / SSJ PARACATU / 1ª PARACATU",
+   "siglaUf": "MG",
+   "poder": "Judiciário",
+   "esfera": "FEDERAL"
+  },
+  "sancionado": {
+   "nome": "PESSOA FICTICIA DE TESTE",
+   "codigoFormatado": "000.000.001-91"
+  },
+  "pessoa": {
+   "id": 1,
+   "cpfFormatado": "***.000.001-**",
+   "cnpjFormatado": "",
+   "numeroInscricaoSocial": "",
+   "nome": "PESSOA FICTICIA DE TESTE",
+   "razaoSocialReceita": "",
+   "nomeFantasiaReceita": "",
+   "tipo": "Pessoa Física"
+  },
+  "textoPublicacao": "",
+  "linkPublicacao": "",
+  "detalhamentoPublicacao": "",
+  "numeroProcesso": "",
+  "abrangenciaDefinidaDecisaoJudicial": "Sem Informação",
+  "informacoesAdicionaisDoOrgaoSancionador": ""
+ }
+]

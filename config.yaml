@@ -1,0 +1,97 @@
+# Configuração do pipeline CGU.
+# A chave da API fica em .env (CGU_API_KEY), nunca aqui.
+
+# synthetic: base sintética local com fraudes plantadas (padrão)
+# real: APIs públicas (PNCP, Portal da Transparência, Receita, Compras.gov.br)
+source: synthetic
+
+paths:
+  data_dir: data
+  warehouse: data/warehouse.duckdb
+  raw_dir: data/raw
+  reports_dir: data/reports
+
+synthetic:
+  seed: 42
+  uf: ES
+  start: 2024-10-01
+  end: 2026-09-30
+  n_agencies: 40
+  n_suppliers: 1500
+  n_tenders: 5500
+  # Cenários plantados (quantidades)
+  cartels: 3              # grupos de empresas em conluio
+  cartel_size: [4, 6]
+  cartel_tenders: 25      # licitações por cartel
+  shell_companies: 15     # empresas recém-criadas que ganham contratos
+  splitting_series: 6     # séries de dispensas fracionadas
+  overpriced_items: 300
+  favored_suppliers: 3    # fornecedor único recorrente (1 por órgão)
+  benford_agencies: 2     # órgãos com valores "fabricados"
+  atypical_contracts: 40  # aditivos/prazos fora do padrão
+  sanction_rate_fraud: 0.6
+  sanction_rate_normal: 0.02
+
+real:
+  uf: ES
+  start: 2024-10-01
+  end: 2026-09-30
+  sample_months: 1                # usado por --amostra
+  orgao: null                     # CNPJ do órgão para restringir (opcional)
+  min_free_disk_gb: 5
+  top_item_codes: 300             # resultados por item só para os N códigos mais frequentes
+  portal_rate_per_min: 90         # limite do Portal da Transparência (horário diurno)
+  pncp_rate_per_min: 240
+  # O diretório antigo (arquivos.receitafederal.gov.br/dados/cnpj/...) retorna 404 e hoje
+  # é um compartilhamento Nextcloud. Confirme a URL antes do primeiro uso.
+  cnpj_dump_url: null
+  cnpj_dump_month: null           # ex.: 2026-09
+
+# Limites de dispensa por valor (Lei 14.133/2021, art. 75, I e II), atualizados por decreto.
+# I = obras/serviços de engenharia e manutenção de veículos; II = demais compras e serviços.
+dispensa_limits:
+  2024: {engineering: 119812.02, other: 59906.02}   # Decreto 11.871/2023
+  2025: {engineering: 125451.15, other: 62725.59}   # Decreto 12.343/2024
+  2026: {engineering: 125451.15, other: 62725.59}   # repete 2025 até conferir o decreto de 2026
+
+detectors:
+  isolation:
+    contamination: 0.02
+    n_estimators: 300
+  benford:
+    min_n: 100
+    p_value: 0.001
+    mad_conformity: 0.012       # acima disso: não conformidade (Nigrini, 1º dígito: 0.015)
+  overprice:
+    ratio_threshold: 1.5        # preço > 1,5x a mediana de referência
+    iqr_k: 1.5                  # e > Q3 + k*IQR
+    min_ref_obs: 5
+  graph:
+    min_edge_weight: 3          # co-participações (+ bônus de sócio) para manter a aresta
+    shared_partner_bonus: 5
+    resolution: 1.0
+    min_community_size: 3
+    cohesion_threshold: 0.5     # % de licitações com >= 2 membros
+  new_company:
+    max_age_days: 365
+  splitting:
+    window_days: 90
+    near_limit_ratio: 0.7
+    min_count: 3
+  single_supplier:
+    min_contracts: 5
+    min_value_share: 0.15
+    min_single_bid_ratio: 0.8
+
+# Score agregado por noisy-OR: risco = 1 - prod(1 - peso_i * score_i).
+# O peso é a "gravidade" de cada indício (0-1).
+scoring:
+  weights:
+    shared_partners: 0.6
+    cartel: 0.6
+    splitting: 0.6
+    overprice: 0.55
+    single_supplier: 0.5
+    new_company: 0.4
+    isolation: 0.4
+    benford: 0.2

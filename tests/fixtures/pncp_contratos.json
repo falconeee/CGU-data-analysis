@@ -1,0 +1,70 @@
+{
+ "data": [
+  {
+   "numeroControlePncpCompra": "08924078000104-1-000013/2025",
+   "numeroControlePncpAta": null,
+   "codigoPaisFornecedor": "BRA",
+   "orgaoEntidade": {
+    "cnpj": "08924078000104",
+    "razaoSocial": "MUNICIPIO DE UIRAUNA",
+    "poderId": "N",
+    "esferaId": "M"
+   },
+   "anoContrato": 2025,
+   "sequencialContrato": 13,
+   "dataAtualizacaoGlobal": "2025-03-10T00:08:00",
+   "dataAtualizacao": "2025-03-10T00:08:00",
+   "unidadeOrgao": {
+    "ufNome": "Paraíba",
+    "ufSigla": "PB",
+    "municipioNome": "Uiraúna",
+    "codigoIbge": "2516904",
+    "codigoUnidade": "1",
+    "nomeUnidade": "Prefeitura Municipal de Uiraúna"
+   },
+   "unidadeSubRogada": null,
+   "processo": "250122PE00005",
+   "receita": false,
+   "numeroParcelas": 1,
+   "numeroRetificacao": 0,
+   "temRemanejamento": null,
+   "frutoAdesao": null,
+   "tipoContrato": {
+    "id": 1,
+    "nome": "Contrato (termo inicial)"
+   },
+   "numeroContratoEmpenho": "25",
+   "categoriaProcesso": {
+    "id": 8,
+    "nome": "Serviços"
+   },
+   "tipoPessoaSubContratada": null,
+   "niFornecedorSubContratado": null,
+   "nomeFornecedorSubContratado": null,
+   "objetoContrato": "Contratação de empresa para prestação dos serviços de Borracharia e Vulcanização visando atender as necessidades da Prefeitura Municipal de Uiraúna e do Fundo Municipal de Saúde, bem como todas a unidades administrativas vinculadas a estes órgãos",
+   "valorInicial": 124650.0,
+   "valorParcela": 124650.0,
+   "valorGlobal": 124650.0,
+   "valorAcumulado": null,
+   "dataAssinatura": "2025-02-24",
+   "dataVigenciaInicio": "2025-02-24",
+   "dataVigenciaFim": "2026-02-24",
+   "identificadorCipi": null,
+   "urlCipi": null,
+   "emendaParlamentar": null,
+   "orgaoSubRogado": null,
+   "informacaoComplementar": "",
+   "dataPublicacaoPncp": "2025-03-10T00:07:51",
+   "numeroControlePNCP": "08924078000104-2-000013/2025",
+   "tipoPessoa": "PJ",
+   "niFornecedor": "53796566000138",
+   "nomeRazaoSocialFornecedor": "53.796.566 FRANCISCO JOAQUIM CARDOSO SOBREIRA",
+   "usuarioNome": "Elmar Tecnologia"
+  }
+ ],
+ "totalRegistros": 1,
+ "totalPaginas": 1,
+ "numeroPagina": 1,
+ "paginasRestantes": 0,
+ "empty": false
+}

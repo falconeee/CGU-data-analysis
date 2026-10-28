@@ -1,0 +1,24 @@
+# Segredos
+.env
+
+# Dados gerados/baixados
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Editores / SO
+.DS_Store
+.vscode/
+.idea/
+
+# Saídas do pyvis
+lib/
+*.html

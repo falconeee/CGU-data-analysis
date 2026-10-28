@@ -1,0 +1,62 @@
+{
+ "data": [
+  {
+   "valorTotalHomologado": 13066.4,
+   "orgaoEntidade": {
+    "cnpj": "27080530000143",
+    "razaoSocial": "ESTADO DO ESPIRITO SANTO",
+    "poderId": "N",
+    "esferaId": "E"
+   },
+   "dataInclusao": "2025-03-10T07:16:55",
+   "dataAtualizacao": "2025-03-10T07:16:55",
+   "tipoInstrumentoConvocatorioNome": "Edital",
+   "valorTotalEstimado": 18240.0,
+   "modalidadeId": 6,
+   "modalidadeNome": "Pregão - Eletrônico",
+   "modoDisputaId": 3,
+   "modoDisputaNome": "Aberto-Fechado",
+   "tipoInstrumentoConvocatorioCodigo": 1,
+   "numeroControlePNCP": "27080530000143-1-000097/2025",
+   "anoCompra": 2025,
+   "srp": true,
+   "sequencialCompra": 97,
+   "emendaParlamentar": null,
+   "numeroCompra": "90002",
+   "processo": "2024-NNVHD",
+   "objetoCompra": "Registro de Preços para eventual Aquisição de Material de Laboratório (Disco de Antibiograma)",
+   "informacaoComplementar": " Para as respostas de esclarecimentos e impugnações deste edital acesse o link: https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=quadro-informativo&compra=92503605900022025",
+   "dataAberturaProposta": "2025-03-10T08:00:00",
+   "dataEncerramentoProposta": "2025-03-20T09:00:00",
+   "dataPublicacaoPncp": "2025-03-10T07:16:55",
+   "dataAtualizacaoGlobal": "2025-04-15T08:48:33",
+   "unidadeOrgao": {
+    "ufNome": "Espírito Santo",
+    "ufSigla": "ES",
+    "municipioNome": "Jerônimo Monteiro",
+    "nomeUnidade": "UNIDADE INTEGRADA JERONIMO MONTEIRO",
+    "codigoIbge": "3203106",
+    "codigoUnidade": "925036"
+   },
+   "orgaoSubRogado": null,
+   "unidadeSubRogada": null,
+   "amparoLegal": {
+    "nome": "Lei 14.133/2021, Art. 28, I",
+    "descricao": "pregão: modalidade de licitação obrigatória para aquisição de bens e serviços comuns",
+    "codigo": 1
+   },
+   "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/landing?destino=acompanhamento-compra&compra=92503605900022025",
+   "linkProcessoEletronico": null,
+   "justificativaPresencial": null,
+   "fontesOrcamentarias": [],
+   "situacaoCompraId": 1,
+   "situacaoCompraNome": "Divulgada no PNCP",
+   "usuarioNome": "Compras.gov.br"
+  }
+ ],
+ "totalRegistros": 1,
+ "totalPaginas": 1,
+ "numeroPagina": 1,
+ "paginasRestantes": 0,
+ "empty": false
+}
